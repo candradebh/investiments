@@ -11,9 +11,12 @@ public class InvestimentosApplication {
 	private static Logger logger = LoggerFactory.getLogger(InvestimentosApplication.class);
 
 	public static void main(String[] args) {
-		logger.info("START APP");
+
+		logger.info("BEFORE START APP");
 		SpringApplication.run(InvestimentosApplication.class, args);
-		logger.info("No ar ... ");
+		logger.info("AFTER START APP");
+
+		System.out.println("No AR");
 	}
 
 }

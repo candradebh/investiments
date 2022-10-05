@@ -2682,3 +2682,39 @@ Unconditional classes:
 2022-10-04 22:10:26,169 DEBUG org.springframework.context.support.DefaultLifecycleProcessor [SpringApplicationShutdownHook] Bean 'springBootLoggingLifecycle' completed its stop procedure
 2022-10-04 22:10:26,170 DEBUG org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringApplicationShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
 2022-10-04 22:10:26,170 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-04 22:14:23,484 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] START APP
+2022-10-04 22:14:23,766 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] Starting InvestimentosApplication using Java 17.0.3.1 on DESKTOP-3UGOFD9 with PID 26872 (C:\www\java\investimentos\target\classes started by carli in C:\www\java\investimentos)
+2022-10-04 22:14:23,767 DEBUG dev.carlosandrade.investimentos.InvestimentosApplication [main] Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-04 22:14:23,767 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-10-04 22:14:25,438 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] Started InvestimentosApplication in 1.886 seconds (JVM running for 2.176)
+2022-10-04 22:14:25,441 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] No ar ... 
+2022-10-04 22:14:52,847 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] START APP
+2022-10-04 22:14:53,144 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] Starting InvestimentosApplication using Java 17.0.3.1 on DESKTOP-3UGOFD9 with PID 3820 (C:\www\java\investimentos\target\classes started by carli in C:\www\java\investimentos)
+2022-10-04 22:14:53,145 DEBUG dev.carlosandrade.investimentos.InvestimentosApplication [main] Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-04 22:14:53,145 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-10-04 22:14:54,729 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] Started InvestimentosApplication in 1.813 seconds (JVM running for 2.095)
+2022-10-04 22:14:54,732 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] No ar ... 
+2022-10-04 22:20:35,890 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] BEFORE START APP
+2022-10-04 22:20:36,188 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] Starting InvestimentosApplication using Java 17.0.3.1 on DESKTOP-3UGOFD9 with PID 13748 (C:\www\java\investimentos\target\classes started by carli in C:\www\java\investimentos)
+2022-10-04 22:20:36,189 DEBUG dev.carlosandrade.investimentos.InvestimentosApplication [main] Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-04 22:20:36,189 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-10-04 22:20:37,995 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] Started InvestimentosApplication in 2.03 seconds (JVM running for 2.338)
+2022-10-04 22:20:37,998 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] AFTER START APP
+2022-10-04 22:21:22,636 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] BEFORE START APP
+2022-10-04 22:21:22,952 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] Starting InvestimentosApplication using Java 17.0.3.1 on DESKTOP-3UGOFD9 with PID 7604 (C:\www\java\investimentos\target\classes started by carli in C:\www\java\investimentos)
+2022-10-04 22:21:22,952 DEBUG dev.carlosandrade.investimentos.InvestimentosApplication [main] Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-04 22:21:22,953 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-10-04 22:21:24,605 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] Started InvestimentosApplication in 1.903 seconds (JVM running for 2.188)
+2022-10-04 22:21:24,608 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] AFTER START APP
+2022-10-04 22:22:45,192 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] BEFORE START APP
+2022-10-04 22:22:45,472 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] Starting InvestimentosApplication using Java 17.0.3.1 on DESKTOP-3UGOFD9 with PID 4068 (C:\www\java\investimentos\target\classes started by carli in C:\www\java\investimentos)
+2022-10-04 22:22:45,472 DEBUG dev.carlosandrade.investimentos.InvestimentosApplication [main] Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-04 22:22:45,472 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-10-04 22:22:47,110 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] Started InvestimentosApplication in 1.851 seconds (JVM running for 2.138)
+2022-10-04 22:22:47,111 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] AFTER START APP
+2022-10-04 22:24:43,599 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] BEFORE START APP
+2022-10-04 22:24:43,878 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] Starting InvestimentosApplication using Java 17.0.3.1 on DESKTOP-3UGOFD9 with PID 12116 (C:\www\java\investimentos\target\classes started by carli in C:\www\java\investimentos)
+2022-10-04 22:24:43,879 DEBUG dev.carlosandrade.investimentos.InvestimentosApplication [main] Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-04 22:24:43,879 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-10-04 22:24:45,479 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] Started InvestimentosApplication in 1.812 seconds (JVM running for 2.097)
+2022-10-04 22:24:45,482 INFO dev.carlosandrade.investimentos.InvestimentosApplication [main] AFTER START APP
