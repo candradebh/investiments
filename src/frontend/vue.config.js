@@ -1,6 +1,8 @@
 module.exports = {
   // https://cli.vuejs.org/config/#devserver-proxy
-  transpileDependencies: true,
+  // transpileDependencies: true,
+  //outputDir: 'target/dist',
+  //assetsDir: 'static',
   devServer:{
     port:3000,
     proxy:{
