@@ -36,3 +36,6 @@ build/
 #### LOGS ####
 /logs/
 
+
+#### FRONTEND ####
+/src/frontend/node_modules
