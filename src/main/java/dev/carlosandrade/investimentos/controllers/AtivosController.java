@@ -31,7 +31,7 @@ public class AtivosController {
 
             for(Ativo register:listRegisters){
                 String ticker = register.getTicker();
-                register.add(linkTo(methodOn(AtivosController.class).read(ticker)).withSelfRel());
+                register.add(linkTo(methodOn(AtivosController.class).read(ticker)).withRel("read"));
             }
             return ResponseEntity.ok(listRegisters);
         }
@@ -63,7 +63,7 @@ public class AtivosController {
         if(!register.isPresent()){
             return ResponseEntity.notFound().build();
         }else{
-            return ResponseEntity.ok(register.get().add(linkTo(methodOn(AtivosController.class).getAll()).withSelfRel("Lista de Ativos")));
+            return ResponseEntity.ok(register.get().add(linkTo(methodOn(AtivosController.class).getAll()).withRel("getAll")));
         }
     }
 
