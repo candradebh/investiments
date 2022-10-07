@@ -3,12 +3,17 @@ package dev.carlosandrade.investimentos.controllers;
 import dev.carlosandrade.investimentos.entity.Ativo;
 import dev.carlosandrade.investimentos.repository.AtivoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
+
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @RestController
 @RequestMapping("/ativos")
@@ -19,7 +24,19 @@ public class AtivosController {
 
     @GetMapping("/all")
     public ResponseEntity getAll() {
-        return ResponseEntity.ok(repository.findAll());
+
+        List<Ativo> listRegisters = repository.findAll();
+
+        if(!listRegisters.isEmpty()){
+
+            for(Ativo register:listRegisters){
+                String ticker = register.getTicker();
+                register.add(linkTo(methodOn(AtivosController.class).read(ticker)).withSelfRel());
+            }
+            return ResponseEntity.ok(listRegisters);
+        }
+
+        return ResponseEntity.notFound().build();
     }
 
     @PostMapping
@@ -30,7 +47,7 @@ public class AtivosController {
 
         if (ativoBuscado.isPresent()) {
 
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+            return ResponseEntity.badRequest()
                     .body("O  ativo " + ativo.getTicker() + " ja esta cadastrado no sistema");
         }
 
@@ -41,7 +58,13 @@ public class AtivosController {
 
     @GetMapping("{ticker}")
     public ResponseEntity read(@PathVariable String ticker) {
-        return ResponseEntity.ok(repository.findByTicker(ticker));
+        Optional<Ativo> register = repository.findByTicker(ticker);
+
+        if(!register.isPresent()){
+            return ResponseEntity.notFound().build();
+        }else{
+            return ResponseEntity.ok(register.get().add(linkTo(methodOn(AtivosController.class).getAll()).withSelfRel("Lista de Ativos")));
+        }
     }
 
     @PutMapping("{ticker}")

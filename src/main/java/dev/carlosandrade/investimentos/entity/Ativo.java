@@ -2,6 +2,7 @@ package dev.carlosandrade.investimentos.entity;
 
 import javax.persistence.*;
 import lombok.*;
+import org.springframework.hateoas.RepresentationModel;
 
 
 @Getter
@@ -11,7 +12,7 @@ import lombok.*;
 @Builder
 @Entity
 @Table(name = "ativos")
-public class Ativo {
+public class Ativo extends RepresentationModel {
 
     @Id
     @Column(name = "id", nullable = false)
